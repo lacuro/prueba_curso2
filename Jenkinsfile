@@ -1,13 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Inicio') {
       steps {
-        echo 'empieza'
+        echo 'Hola desde stage de incio'
       }
     }
-  }
-  environment {
-    admin = 'admin'
+    stage('Stage ') {
+      steps {
+        echo 'Hola desdes Stage 2'
+      }
+    }
   }
 }
