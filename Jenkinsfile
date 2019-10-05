@@ -1,14 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('Inicio') {
+    stage('Build') {
       steps {
-        echo 'Hola desde stage de incio'
+        echo 'Build'
       }
     }
-    stage('Stage ') {
+    stage('Test ') {
       steps {
-        echo 'Hola desdes Stage 2'
+        echo 'Test'
+      }
+    }
+    stage('Deploy'){
+      steps{
+        eacho 'DEPLOY'
       }
     }
   }
